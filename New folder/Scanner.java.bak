@@ -1,0 +1,71 @@
+import java.util.Scanner;
+class Numbers 
+{
+public static void main(String []args)
+	{	
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter num1 : ");
+		int num1 = s.nextInt();
+		System.out.print("Enter num2 : ");
+		int num2 = s.nextInt();
+		int add = num1+num2;
+		System.out.println("addition is : "+add);
+	}
+}
+
+class Numbers2
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter 1st string : ");
+		String a = sc.next();
+		//sc.nextLine();
+		System.out.print("enter 2nd string : ");
+		String b = sc.next();
+
+		System.out.print("enter char : ");
+		char c=sc.next().charAt(0);
+
+		System.out.println("enter 1st string : "+a);
+		System.out.println("enter 2nd string : "+b);
+		System.out.println("enter char : "+c);
+		}
+}
+
+class Population1
+{
+public static void main(String[]args)
+	{
+		Scanner s=new Scanner(System.in);
+
+		long g=((24*60*60)*365);
+		
+		System.out.print("How many sec have 1 birth : ");
+		int num1=s.nextInt();
+		long birth=g/num1;
+		//System.out.println("birth per year : "+birth);
+		
+		System.out.print("How many sec have 1 death : ");
+		int num2=s.nextInt();
+		long death=g/num2;
+		//System.out.println("death per year : "+death);
+		
+		System.out.print("How many sec have 1 immigrant : ");
+		int num3=s.nextInt();
+		long immigrant=g/num3;
+		//System.out.println("immigrant per year : "+immigrant);
+		
+		System.out.print("current population : ");
+		int num4=s.nextInt();
+
+		System.out.print("Calculation for How many year : ");
+		int num5=s.nextInt();
+
+		
+		long Total_Population=((birth-death+immigrant)*num5)+num4;
+		System.out.print("Total population : "+Total_Population);
+
+		}
+}
+
