@@ -16,23 +16,18 @@ class UserToUpperCaseMethod
 		String nstr="";
 		for (int i=0;i<str.length();i++) 
 		{
-			char ch =str.charAt(i);
+			char ch=str.charAt(i);
 			if(ch>=97 && ch<=122)
 			{
-				nstr=nstr+ (char)(ch-32);
+				nstr = nstr+(char)(ch-32);
 			}
 			else{
-				nstr = nstr+ch;
+				nstr= nstr+ch;
 			}
 		}
 		return nstr;
 	}
 }
-
-
-
-
-
 
 class ToUpperCaseMethod
 {

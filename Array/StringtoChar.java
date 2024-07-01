@@ -9,6 +9,9 @@ class StringtoChar
 
 		char[] arr = stringToCharArray(name);
 		System.out.println(Arrays.toString(arr));
+
+		//buildin function 
+		char[] arr1
 	}
 
 	public static char[] stringToCharArray(String name)

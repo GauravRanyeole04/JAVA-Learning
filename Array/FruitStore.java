@@ -37,18 +37,29 @@ class FruitStore
 	}
 	public static void main(String[] args) 
 	{
-		System.out.print("Enter the array Size : ");
-		int size=sc.nextInt();
-
-		System.out.println("Enter the Fruits : ");
-		String fruits[]=new String[size];
-
 		FruitStore obj = new FruitStore();
-		obj.storeFruit(fruits);
-		obj.displayFruits();
-		obj.changeFruit();
-		obj.displayFruits();
-		
+
+		// System.out.print("Enter the array Size : ");
+		// int size=sc.nextInt();
+
+		// System.out.println("Enter the Fruits : ");
+		// String fruits[]=new String[size];
+
+		// obj.storeFruit(fruits);
+		// obj.displayFruits();
+		// obj.changeFruit();
+		// obj.displayFruits();
+
+		boolean flag=true;
+		while(flag)
+		{
+			System.out.println("1.Store Fruit.");
+			System.out.println("2.Display Fruit.");
+			System.out.println("3.change Fruit.");
+			System.out.println("4.Exit");
+			System.out.println("Enter an Option : ");
+		}
+
 
 
 

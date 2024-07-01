@@ -17,7 +17,7 @@ class UserToLowerCaseMethod
 		for (int i=0;i<str.length();i++) 
 		{
 			char ch =str.charAt(i);
-			if(ch>=65 && ch<=97)
+			if(ch>=65 && ch<=90)
 			{
 				nstr=nstr+ (char)(ch+32);
 			}

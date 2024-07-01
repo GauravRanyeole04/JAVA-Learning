@@ -29,6 +29,8 @@ class SortAscArray
 				}
 			}
 		}
+
+		System.out.println("Second Smallest Array");
 		System.out.println(Arrays.toString(arr));
 	}
 }

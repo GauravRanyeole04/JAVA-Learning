@@ -65,18 +65,110 @@
 // // }
 
 
-import java.util.Scanner;
-class Gaurav
+// import java.util.*;
+// class SumProd1dArray 
+// {
+// 	public static void main(String[] args) 
+// 	{
+// 		Scanner sc = new Scanner(System.in);
+// 		System.out.println("Enter the Array Size : ");
+// 		int size= sc.nextInt();
+// 		System.out.println("Enter an Array Element : ");
+// 		int arr[] = new int [size];
+// 		int sum=0;
+// 		int prod=1;
+// 		for (int i=0;i<size;i++) 
+// 		{
+// 			arr[i]=sc.nextInt();
+// 			sum=sum+arr[i];
+// 			prod=prod*arr[i];
+// 		}
+
+// 		System.out.println("Sum : "+sum);
+// 		System.out.println("Product : "+prod);		
+// 	}
+// }
+
+// class EvenOddArray 
+// {
+// 	public static void main(String[] args) 
+// 	{
+// 		Scanner sc = new Scanner(System.in);
+// 		System.out.println("Enter the Size of an Array : ");
+// 		int size= sc.nextInt();
+// 		System.out.println("Enter an Array Element : ");
+// 		int arr[] =new int[size];
+
+// 		int evenCount=0;
+// 		int oddCount=0;
+// 		for(int i=0;i<size;i++)
+// 		{
+// 			arr[i]=sc.nextInt();
+// 			if(arr[i]%2==0)
+// 			{
+// 				evenCount++;
+// 			}
+// 			else{
+// 				oddCount++;
+// 			}
+// 		}
+// 		int even[]=new int[evenCount];
+// 		int odd[]=new int[oddCount];
+// 		int itt1=0;
+// 		int itt2=0;
+
+// 		for(int i=0;i<size;i++)
+// 		{
+// 			if(arr[i]%2==0)
+// 			{
+// 				even[itt1++]=arr[i];
+// 			}
+// 			else{
+// 				odd[itt2++]=arr[i];
+// 			}
+// 		}
+		
+// 		System.out.println("Even : "+(Arrays.toString(even)));
+// 		System.out.println("Odd : "+(Arrays.toString(odd)));
+// 	}
+// }
+
+
+// import java.util.*;
+// class GretestNumber 
+// {
+// 	public static void main(String[] args) 
+// 	{
+// 		for (int i=0;i<arr.length;i++) 
+// 		{
+// 			if(arr[i]%2==0)
+// 			{
+// 				System.out.println(arr[i]+": Even");
+// 			}else{
+// 				System.out.println(arr[i]+": Odd.");
+// 			}
+// 		}
+// 	}
+// }
+
+
+class FabonaciiSunny  
 {
 	public static void main(String[] args) 
 	{
-		Scanner sc = new Scanner(System.in);
-		int op=0;
-		int [] arr = {1,2,3,4,5,6};
-		for(int i=0;i<arr.length;i++)
+		int num1=0;
+		int num2=1;
+
+		StringBuffer sb = new StringBuffer();
+
+		for (int i=0;i<=10;i++) 
 		{
-			op=arr[i];
-			System.out.println(op);
+			sb.append(num1+"\n");
+			int num3=num1+num2;
+			num1=num2;
+			num2=num3;
 		}
+		System.out.println(sb);
+
 	}
 }

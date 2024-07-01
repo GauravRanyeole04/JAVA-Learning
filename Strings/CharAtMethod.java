@@ -34,6 +34,6 @@ class CharAt
 		System.out.println(name.charAt(name.length()-1));  //y
 		System.out.println(name.charAt(1));  //u
 		// System.out.println(name.charAt(-1));  //StringIndexException
-		System.out.println(name.charAt(name.length()));  //StringIndexException
+		// System.out.println(name.charAt(name.length()));  //StringIndexException
 	}
 }

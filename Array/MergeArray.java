@@ -37,7 +37,7 @@ class MergeArray
 		{
 			mergeArray[size1+i]=arr2[i];
 		}
-
+		
 		System.out.println("First Array : "+Arrays.toString(arr1));
 		System.out.println("Second Array : "+Arrays.toString(arr2));
 		System.out.println("Merged Array : "+Arrays.toString(mergeArray));
